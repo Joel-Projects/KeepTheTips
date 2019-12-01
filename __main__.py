@@ -131,7 +131,7 @@ if __name__ == '__main__':
     funcs = [submissionStream, commentChecker]
     redditApps = ['KeepTheTips_SubmissionStream', 'KeepTheTips_CommentChecker']
     redditKwargs = [BotServices(app).reddit(botname=app, redditUsername='keepthetips').config._settings for app in redditApps]
-    processes = [Process(target=func, kwargs={'botName': botName, 'subreddit': 'LifeProBotTest', 'redditKwargs': redditKwargs[i]}) for i, func in enumerate(funcs)]
+    processes = [Process(target=func, kwargs={'botName': botName, 'subreddit': 'LifeProTips', 'redditKwargs': redditKwargs[i]}) for i, func in enumerate(funcs)]
     # processes = [Process(target=func, kwargs={'botName': botName, 'subreddit': 'RoastMe', 'redditKwargs': redditKwargs}) for func in funcs]
     for process in processes:
         process.start()

@@ -1,3 +1,4 @@
--e git+git@github.com:LilSpazJoekp/praw.git#egg=praw
+#-e git+git@github.com:LilSpazJoekp/praw.git#egg=praw
+praw
 -e ../BotUtils
 SQLAlchemy
