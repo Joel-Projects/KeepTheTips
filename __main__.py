@@ -32,7 +32,7 @@ def submissionStream(botName, subreddit, redditKwargs):
             for submission in stream():
                 if submission:
                     try:
-                        if getattr(submission.author, 'name', None) and not submission.removed and not submission.is_self and not submission.archived:
+                        if getattr(submission.author, 'name', None) and not submission.removed and not submission.archived:
                             data = {
                                 'id': submission.id,
                                 'author': submission.author.name,
