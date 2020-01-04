@@ -40,11 +40,11 @@ def submissionStream(botName, subreddit, redditKwargs):
                                 'submitted': time.time()
                             }
                             log.debug(data)
-                            # if not submission.id in alreadyProcessed:
-                            dbSubmission = Submission(**data)
-                            session.add(dbSubmission)
-                            session.commit()
-                            log.info(f'Submission Stream: {submission.id} by u/{submission.author} submitted at {time.strftime("%b %d, %Y %I:%M:%S %p %Z", time.localtime(submission.created_utc))}')
+                            if not submission.id in alreadyProcessed:
+                                dbSubmission = Submission(**data)
+                                session.add(dbSubmission)
+                                session.commit()
+                                log.info(f'Submission Stream: {submission.id} by u/{submission.author} submitted at {time.strftime("%b %d, %Y %I:%M:%S %p %Z", time.localtime(submission.created_utc))}')
                             if not dryrun:
                                 reply = submission.reply(submissionComment)
                                 reply.mod.distinguish(sticky=True)
