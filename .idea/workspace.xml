@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa4a0be6-d84a-49c3-aea5-2cedac1c09c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__main__.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,6 +97,13 @@
   </component>
   <component name="ProjectId" id="1ULXThMmzCQAgiENSLWH6EwaRY6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
@@ -112,18 +118,6 @@
       <console-settings is-module-sdk="true">
         <option name="myUseModuleSdk" value="true" />
       </console-settings>
-    </option>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
     </option>
   </component>
   <component name="RunManager" selected="Python.KeepTheTips">
@@ -238,23 +232,15 @@
     </recent_temporary>
   </component>
   <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4dfa3e05" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4dfa3e05" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@1ec4c502" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-          </expand>
-          <select />
-        </treeState>
-      </serviceView>
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -271,6 +257,7 @@
       <workItem from="1575144631360" duration="2769000" />
       <workItem from="1575153926228" duration="4868000" />
       <workItem from="1575176419110" duration="336000" />
+      <workItem from="1578174986912" duration="270000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1575164182762</created>
@@ -293,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575176686047</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fix self post exclusion">
+      <created>1578175153140</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1578175153140</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,6 +314,16 @@
     <MESSAGE value="Switch bot on LifeProTips" />
     <MESSAGE value="Fix self post exclusion" />
     <option name="LAST_COMMIT_MESSAGE" value="Fix self post exclusion" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="423" y="128" key="CommitChangelistDialog2" timestamp="1578175152995">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="423" y="128" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1578175152995" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1578175159647">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1578175159647" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
