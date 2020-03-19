@@ -86,8 +86,8 @@ def commentChecker(botName, subreddit, redditKwargs):
                 commentid = result.commentid
                 comment = reddit.comment(commentid)
                 try:
-                    comment._fetch()
-                    if not comment.submission.removed:
+                    comment._fetch()    
+                    if not comment.submission.removed and not comment.submission.approved:
                         if commentMinAge>comment.created_utc>commentMaxAge:
                             commentRemovalScore = floor(1.6**((((time.time() - comment.created_utc)/60)/60) - 1) - 20)+(comment.submission.score*submissionScoreRatio)
                             if comment.score < commentRemovalScore:
@@ -107,7 +107,11 @@ def commentChecker(botName, subreddit, redditKwargs):
                             else:
                                 continue
                     else:
-                        if not comment.submission.banned_by == 'keepthetips':
+                        if comment.submission.approved:
+                            result.safe = True
+                            session.commit()
+                            continue
+                        elif not comment.submission.banned_by == 'keepthetips':
                             result.submission_removed = True
                             log.info(f'Comment Checker: Marked submission {comment.submission.id} as removed. Post was removed by u/{comment.submission.banned_by}.')
                     session.commit()
