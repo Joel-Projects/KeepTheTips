@@ -87,7 +87,7 @@ def commentChecker(botName, subreddit, redditKwargs):
                 comment = reddit.comment(commentid)
                 try:
                     comment._fetch()
-                    if not comment.submission.removed and not comment.submission.approved:
+                    if not comment.submission.removed and not comment.submission.approved and not comment.submission.score >= 5000:
                         if commentMinAge>comment.created_utc>commentMaxAge:
                             commentRemovalScore = floor(1.6**((((time.time() - comment.created_utc)/60)/60) - 1) - 20)+(comment.submission.score*submissionScoreRatio)
                             if comment.score < commentRemovalScore:
