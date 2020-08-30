@@ -89,7 +89,7 @@ def commentChecker(botName, subreddit, redditKwargs):
                     comment._fetch()
                     if not comment.submission.removed and not comment.submission.approved and not comment.submission.score >= 5000:
                         if commentMinAge>comment.created_utc>commentMaxAge:
-                            commentRemovalScore = floor(1.6**((((time.time() - comment.created_utc)/60)/60) - 1) - 20)+(comment.submission.score*submissionScoreRatio)
+                            commentRemovalScore = floor(2**((((time.time() - comment.created_utc)/60)/60) - 1) - 10)
                             if comment.score < commentRemovalScore:
                                 log.info(f'Comment Checker: Removal Score: {commentRemovalScore}, Actual Score: {comment.score} for {comment.id}')
                                 comment.submission.mod.remove()
@@ -103,6 +103,7 @@ def commentChecker(botName, subreddit, redditKwargs):
                         else:
                             if comment.created_utc < commentMaxAge:
                                 result.safe = True
+                                comment.edit(safeHeader + '\n' + comment.body)
                                 log.info(f'Comment Checker: {comment.submission.id} marked as safe')
                             else:
                                 continue
