@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="aa4a0be6-d84a-49c3-aea5-2cedac1c09c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +183,9 @@
       <workItem from="1575176419110" duration="336000" />
       <workItem from="1578174986912" duration="1430000" />
       <workItem from="1584577995795" duration="879000" />
-      <workItem from="1598810287364" duration="1055000" />
+      <workItem from="1598810287364" duration="1267000" />
+      <workItem from="1598916342999" duration="34000" />
+      <workItem from="1598916391489" duration="411000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1575164182762</created>
@@ -222,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578175274684</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix">
+      <created>1598812614340</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1598812614340</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,13 +255,22 @@
     <MESSAGE value="Switch bot on LifeProTips" />
     <MESSAGE value="Fix self post exclusion" />
     <MESSAGE value="Try and reduce postgres logs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Try and reduce postgres logs" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="593" y="245" key="CommitChangelistDialog2" timestamp="1598812613605">
+      <screen x="0" y="0" width="2048" height="1280" />
+    </state>
+    <state x="593" y="245" key="CommitChangelistDialog2/0.0.2048.1280@0.0.2048.1280" timestamp="1598812613605" />
     <state x="205" y="114" key="MergeDialog" timestamp="1598811278412">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
     <state x="205" y="114" key="MergeDialog/0.0.2048.1280@0.0.2048.1280" timestamp="1598811278412" />
+    <state x="624" y="373" key="Vcs.Push.Dialog.v2" timestamp="1598812616818">
+      <screen x="0" y="0" width="2048" height="1280" />
+    </state>
+    <state x="624" y="373" key="Vcs.Push.Dialog.v2/0.0.2048.1280@0.0.2048.1280" timestamp="1598812616818" />
     <state x="821" y="554" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598811239242">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
